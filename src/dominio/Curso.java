@@ -35,8 +35,8 @@ public class Curso {
         //la variable para comparar sería notas[i]>this.promedio
         int estudiantes = 0;
             for (int i = 0; i < notas.length; i++) {
-                if (notas[i] > estudiantes){
-                    estudiantes = (int)notas[i];
+                if (notas[i] > this.promedio){
+                    estudiantes = estudiantes + 1;
                 }
             }
             this.estudiantesEncimaPromedio = estudiantes;
